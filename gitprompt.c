@@ -63,13 +63,17 @@
 #define COLOR_BLUE_BOLD "%{\x1b[34;1m%}"
 #define COLOR_MAGENTA_BOLD "%{\x1b[35;1m%}"
 #define COLOR_CYAN_BOLD "%{\x1b[36;1m%}"
+#define COLOR_ORANGE_BOLD "%{\x1b[38;5;202;1m%}"
 #define COLOR_RESET "%{\x1b[0m%}"
+
+// Orange color found via: http://bitmote.com/index.php?post/2012/11/19/Using-ANSI-Color-Codes-to-Colorize-Your-Bash-Prompt-on-Linux
 
 // --- config section ---------------------------------
 #define STATUS_PREFIX "["
 #define STATUS_SUFFIX "]"
 #define STATUS_SEPARATOR "|"
-#define BRANCH_NAME_COLOR COLOR_BLACK_BOLD
+//#define BRANCH_NAME_COLOR COLOR_BLACK_BOLD
+#define BRANCH_NAME_COLOR COLOR_ORANGE_BOLD
 #define STAGED_COLOR COLOR_YELLOW_BOLD
 #define STAGED_SYMBOL "-"
 #define CONFLICTS_COLOR COLOR_RED_BOLD
